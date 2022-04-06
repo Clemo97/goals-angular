@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { Goal } from '../goal';
 @Component({
   selector: 'app-goal-detail',
   templateUrl: './goal-detail.component.html',
   styleUrls: ['./goal-detail.component.css']
 })
 export class GoalDetailComponent implements OnInit {
+
+  @Input()
+  // The "!" after a variable tells TYpescript that the value is not null or undefined.
+  goal!: Goal;
 
   constructor() { }
 
