@@ -1,4 +1,6 @@
+//Input is imported to allow input property binding
 import { Component, Input, OnInit } from '@angular/core';
+//Import goal propert class
 import { Goal } from '../goal';
 @Component({
   selector: 'app-goal-detail',
@@ -17,3 +19,4 @@ export class GoalDetailComponent implements OnInit {
   }
 
 }
+
